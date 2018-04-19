@@ -1,0 +1,40 @@
+REST API
+CRUD-operations
+C=create (insert)
+R=read (select)
+U=update
+D=delete
+
+https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html
+
+
+Example:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Borrowers</h1>
+    <div id="borrowers">
+
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function(){
+    showborrower="<table border='1'>";
+    showborrower+="<tr><th>Firstname</th><th>Lastname</th></tr>";
+    $.getJSON("http://localhost/ci_library/index.php/rest/get_borrowers", function(data){
+      //console.log(data);
+      $.each(data, function(key,val) {
+        showborrower+="<tr><td>"+val.firstname+"</td><td>"+val.lastname+"</td></tr>";
+        console.log(val.firstname+" "+val.lastname);
+      });
+      $("#borrowers").html(showborrower);
+      showborrower+="</table>";
+    });
+  });
+</script>
