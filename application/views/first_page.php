@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="<?php echo base_url('css/first_style.css');?>">
 </head>
 <body>
+  
   <div class="text-center">
     <h1>Welcome to <b class="fonts">Engine4U</b></h1>
   </div>
+  <!--Instruction-->
       <div class="container firsts">
         <div class="row">
           <div class="col-sm-4 tells">
@@ -39,7 +41,7 @@
             <a href="<?php echo site_url('main/main_page'); ?>" class="btn btn-primary">MAIN PAGE</a>
             <hr>
           </div>
-
+  <!--End Instruction-->
           <div class="col-sm-8 slid">
             <div id="myCarousel" class="carousel slide " data-ride="carousel">
 

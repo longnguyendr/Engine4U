@@ -44,56 +44,61 @@
 </div>
 <!--End Instruction-->
 
+<!--Begin Search -->
     <div class="container text-center">
       <h3>Book at Engine4U for the Best Rates Guaranteed</h3>
       <br>
       <div class="frame-search">
       		<div class="row">
+            <!--   Col 4   -->
             	<div style="margin-top:10px;" class="col-sm-4">
                 <label for="sel1">Choose location:</label>
                   <input type="text" id="sel1"class="form-control pick-input" placeholder="Pickup location">
               </div>
+            <!--    Col 3  -->
 
               <div style="margin-top:10px;" class="col-sm-3">
-                <div class="col-sm-12">
-                    <label>Check-in</label>
-                </div>
-                <div class="col-sm-6">
-                    <input type="text" id="sel2" class="form-control" placeholder="00:00">
-                </div>
-                <br>
-                <div class="col-sm-6">
-                  <input type="text" id="sel2" class="form-control" placeholder="mm/dd/yy">
-                </div>
-
-                <div class="col-sm-12">
-                  <div class="form-group" style="margin-top:50px;">
-                    <label for="sel3">Select list (select one):</label>
-                    <select class="form-control" id="sel3">
-                      <option selected="true" disabled="disabled">Type of Car</option>
-                      <option>4 seats</option>
-                      <option>7 seats</option>
-                      <option>3</option>
-                    </select>
+                  <div class="col-sm-12">
+                      <label>Check-in</label>
                   </div>
-                </div>
+                  <br>
+                  <div class="col-sm-12">
+                    <div class='input-group date' id='datetimepicker_checkin'>
+                        <input type='text' class="form-control" name="check_in" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-top:10px;">
+                      <label for="sel3">Select list (select one):</label>
+                      <select class="form-control" id="sel3">
+                        <option selected="true" disabled="disabled">Type of Car</option>
+                        <option>4 seats</option>
+                        <option>7 seats</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                  </div>
               </div>
-
-                <div style="margin-top:10px;" class="col-sm-3">
+              <!--    Col 3  -->
+              <div style="margin-top:10px;" class="col-sm-3">
                   <div class="col-sm-12">
                     <label>Check-out:</label>
                   </div>
-                  <div class="col-sm-6">
-
-                      <input type="text" id="sel4" class="form-control" placeholder="24:00">
-                  </div>
                   <br>
-                  <div class="col-sm-6">
-                      <input type="text" id="sel4" class="form-control" placeholder="mm/dd/yy/">
+                  <div class="col-sm-12">
+                    <div class='input-group date' id='datetimepicker_checkout'>
+                        <input type='text' class="form-control" name="check_out"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                   </div>
                   <div class="col-sm-12">
                     <form>
-                      <div class="form-group" style="margin-top:50px;">
+                      <div class="form-group" style="margin-top:10px;">
                         <label for="sel5">Select list (select one):</label>
                         <select class="form-control" id="sel5">
                           <option selected="true" disabled="disabled">Model</option>
@@ -105,15 +110,73 @@
                     </form>
                   </div>
                 </div>
-
+                <!--    Col 2  -->
                 <div class="col-sm-2">
                   <div >
                     <button type="button" class="btn-search"> <b>Search</b></button>
                   </div>
                 </div>
+                <div class="col-sm-6">
+                  <div class="slidecontainer" id="pri">
+                    <input type="range" min="1" max="999" value="50" class="slider" id="myRange">
+                    <p>Price: <span id="pricerange"></span></p>
+                  </div>
+                </div>
           </div>
-
         </div>
       <hr>
-
 </div>
+<!--End Search-->
+
+<!-- body content-->
+  <div class="container">
+    <div class="row" >
+      <!-- Google map API-->
+      <div class="col-sm-6">
+        <img class="img-responsive"  src="<?php echo base_url('images/google-maps.png')?>" alt="Image">
+      </div>
+      <!-- End google map -->
+      <!--Images display-->
+      <div class="col-sm-6" style="overflow-y:scroll;height: 500px;">
+        <div class="col-sm-6">
+          <a href="<?php echo site_url('reserve/reserves')?>"><img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive"  src="<?php echo base_url('images/car.jpg')?>" alt="Image">
+        </div>
+      </div>
+      <!--End images display-->
+    </div>
+  </div>
+<!-- End body content-->
+<hr>

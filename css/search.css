@@ -4,6 +4,8 @@
   background-color: #DCD9D4;
  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
  background-blend-mode: soft-light,screen;
+   box-shadow: 3px 6px 15px 5px #aaaaaa,3px 6px 15px 5px blue ;
+   border-radius: 5px;
 }
 .container
 {
@@ -41,6 +43,48 @@
   box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
  opacity: 1;
 }
+
+/*--------Price range--------- */
+.slidecontainer {
+    width: 100%;
+    margin-left: 70%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+/*------------------End pricerange----------*/
+
 @media (max-width: 600px) {
   .pick-input
   {
@@ -53,5 +97,10 @@
   .btn-search:hover
   {
     transform: scale(1.1,1.1);
+  }
+  .slidecontainer {
+      width: 100%;
+      margin: auto;
+      margin-top: 25px;
   }
 }

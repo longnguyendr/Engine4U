@@ -1,3 +1,4 @@
+
 <!--              Instruction              -->
 <!-- Modal -->
 <div class="container">
@@ -94,83 +95,93 @@
 <hr>
 </div>
 
-<div class="container text-center">
-  <h3>Book at Engine4U for the Best Rates Guaranteed</h3>
-  <br>
+<!--Begin Search -->
+    <div class="container text-center">
+      <h3>Book at Engine4U for the Best Rates Guaranteed</h3>
+      <br>
+      <div class="frame-search">
+      		<div class="row">
+            <!--   Col 4   -->
+            	<div style="margin-top:10px;" class="col-sm-4">
+                <label for="sel1">Choose location:</label>
+                  <input type="text" id="sel1"class="form-control pick-input" placeholder="Pickup location">
+              </div>
+            <!--    Col 3  -->
 
-  		<div class="row">
-        	<div class="col-sm-3">
-            <label for="sel1">Choose location:</label>
-              <input type="text" id="sel1"class="form-control" placeholder="Pickup location">
+              <div style="margin-top:10px;" class="col-sm-3">
+                  <div class="col-sm-12">
+                      <label>Check-in</label>
+                  </div>
+                  <br>
+                  <!--Datepick checkin-->
+                  <div class="col-sm-12">
+                    <div class='input-group date' id='datetimepicker_checkin'>
+                        <input type='text' class="form-control" name="check_in" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="col-sm-12">
+                    <div class="form-group" style="margin-top:10px;">
+                      <label for="sel3">Select list (select one):</label>
+                      <select class="form-control" id="sel3">
+                        <option selected="true" disabled="disabled">Type of Car</option>
+                        <option>4 seats</option>
+                        <option>7 seats</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+              <!--    Col 3  -->
+              <div style="margin-top:10px;" class="col-sm-3">
+                  <div class="col-sm-12">
+                    <label>Check-out:</label>
+                  </div>
+                  <br>
+                  <!--Datepick checkout-->
+                  <div class="col-sm-12">
+                    <div class='input-group date' id='datetimepicker_checkout'>
+                        <input type='text' class="form-control" name="check_out" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="col-sm-12">
+                    <form>
+                      <div class="form-group" style="margin-top:10px;">
+                        <label for="sel5">Select list (select one):</label>
+                        <select class="form-control" id="sel5">
+                          <option selected="true" disabled="disabled">Model</option>
+                          <option>4 seats</option>
+                          <option>7 seats</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!--    Col 2  -->
+                <div class="col-sm-2">
+                  <div >
+                    <button type="button" class="btn-search"> <b>Search</b></button>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="slidecontainer" >
+                    <input type="range" min="1" max="2500" value="50" class="slider" id="myRange">
+                    <p>Price: <span id="pricerange"></span></p>
+                  </div>
+                </div>
           </div>
-
-          <div class="col-sm-3">
-            <div class="col-sm-12">
-                <label>Check-in</label>
-            </div>
-            <div class="col-sm-6">
-                <input type="text" id="sel2" class="form-control" placeholder="00:00">
-            </div>
-            <br>
-            <div class="col-sm-6">
-              <input type="text" id="sel2" class="form-control" placeholder="mm/dd/yy">
-            </div>
-          </div>
-
-            <div class="col-sm-3">
-              <div class="col-sm-12">
-                <label>Check-out:</label>
-              </div>
-              <div class="col-sm-6">
-
-                  <input type="text" id="sel4" class="form-control" placeholder="24:00">
-              </div>
-              <br>
-              <div class="col-sm-6">
-                  <input type="text" id="sel4" class="form-control" placeholder="mm/dd/yy/">
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div >
-                <button style="margin-top:10px;" type="button" class="btn-search"> <b>Search</b></button>
-              </div>
-            </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3">
         </div>
-        <div class="col-sm-3">
-          <div class="form-group" style="margin-top:10px;">
-            <label for="sel3">Select list (select one):</label>
-            <select class="form-control" id="sel3">
-              <option selected="true" disabled="disabled">Type of Car</option>
-              <option>4 seats</option>
-              <option>7 seats</option>
-              <option>3</option>
-            </select>
-          </div>
-        </div>
-          <div class="col-sm-3">
-            <form>
-              <div class="form-group" style="margin-top:10px;">
-                <label for="sel5">Select list (select one):</label>
-                <select class="form-control" id="sel5">
-                  <option selected="true" disabled="disabled">Model</option>
-                  <option>4 seats</option>
-                  <option>7 seats</option>
-                  <option>3</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="col-sm-3">
-          </div>
-      </div>
-
-  <hr>
-  </div>
+      <hr>
+</div>
+<!--End Search-->
 <div class="container text-center exp">
   <h3>Our Customers</h3>
   <br>

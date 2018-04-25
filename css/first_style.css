@@ -1,25 +1,31 @@
 
 h1{
   color: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+
 }
 .fonts
 {
     font-family: 'Black And White Picture', sans-serif;
+    font-size: 45px;
+    text-shadow: 0 0 1px;
 }
+
 .tells
 {
   margin-top: 10px;
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
   border-radius: 10px;
+  box-shadow: 2px 5px 10px 3px #aaaaaa,2px 5px 10px 3px blue ;
 }
 .btn
 {
   transition: 1s;
+
 }
 .btn:hover
 {
-
   background-color: linear-gradient(to top, #09203f 0%, #537895 100%);
+box-shadow: 4px 7px 15px blue;
 }
 .slid
 {
@@ -27,11 +33,7 @@ h1{
 }
 .item:hover
 {
-  cursor: pointer;
-}
-footer
-{
-  padding-bottom: 20px;
+  cursor: default;
 }
 
 .ffoot a
