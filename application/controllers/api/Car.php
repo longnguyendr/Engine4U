@@ -37,7 +37,6 @@ class Car extends REST_Controller {
         $cars=$this->Car_model->get_cars();
 
         $carID = $this->get('carID');
-
         // If the id parameter doesn't exist return all the users
 
         if ($carID === NULL)
@@ -75,7 +74,7 @@ class Car extends REST_Controller {
         if (!empty($cars))
         {
             //Get the user from database
-            $location=$this->User_model->get_car($carID);
+            $location=$this->Car_model->get_car($carID);
         }
 
         if (!empty($location))

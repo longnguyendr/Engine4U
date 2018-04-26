@@ -1,8 +1,4 @@
 
-
-
-
-
   <!--              Instruction              -->
   <!-- Modal -->
   <div class="container">
@@ -77,12 +73,9 @@
                     </div>
                     <div class="col-sm-12">
                       <div class="form-group" style="margin-top:10px;">
-                        <label for="sel3">Select list (select one):</label>
-                        <select class="form-control" id="sel3">
+                        <label for="sel3">Select type of car (select one):</label>
+                        <select class="form-control" onload="loadtypecar()" id="discar">
                           <option selected="true" disabled="disabled">Type of Car</option>
-                          <option>4 seats</option>
-                          <option>7 seats</option>
-                          <option>3</option>
                         </select>
                       </div>
                     </div>
@@ -104,12 +97,9 @@
                     <div class="col-sm-12">
                       <form>
                         <div class="form-group" style="margin-top:10px;">
-                          <label for="sel5">Select list (select one):</label>
-                          <select class="form-control" id="sel5">
-                            <option selected="true" disabled="disabled">Model</option>
-                            <option>4 seats</option>
-                            <option>7 seats</option>
-                            <option>3</option>
+                          <label for="mdy">Select Model year (select one):</label>
+                          <select class="form-control" id="mdy" onload="loadmodelyear()">
+                            <option selected="true" disabled="disabled">Model Year</option>
                           </select>
                         </div>
                       </form>
@@ -190,9 +180,9 @@
     </div>
   <!-- End body content-->
   <hr>
+  <script src="<?php echo base_url('js/search.js'); ?>"></script>
   <script src="<?php echo base_url('js/script.js');?>"></script>
+  <script src="<?php echo base_url('js/datepicker.js'); ?>"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcvzlX3wXewDZjucmkOLPL1U_baon3TEA&callback=initMap">
     </script>
-  </body>
-</html>

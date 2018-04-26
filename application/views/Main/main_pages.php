@@ -267,3 +267,4 @@
   </div>
   <hr>
 </div>
+<script src="<?php echo base_url('js/datepicker.js'); ?>"></script>
