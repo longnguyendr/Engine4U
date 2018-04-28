@@ -35,7 +35,7 @@ class Car extends REST_Controller {
     {
         // Users from a data store e.g. database
         $cars=$this->Car_model->get_cars();
-
+        //This->get('carI') in http://localhost/car/index.php/api/car/cars/carI/1
         $carID = $this->get('carID');
         // If the id parameter doesn't exist return all the users
 

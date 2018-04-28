@@ -1,4 +1,4 @@
-$(function () {
+$(function xxxx() {
 $('#datetimepicker_checkin').datetimepicker({
             format: 'YYYY-MM-DD'
         });

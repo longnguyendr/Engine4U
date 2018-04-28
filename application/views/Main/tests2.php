@@ -1,6 +1,6 @@
-
 <h1>AAA</h1>
 <h1>AAA</h1>
+<?php echo $cars['carID']; ?><br>
 <div class="container">
 <td><label for="">CHECK-IN</label></td>
     <td>

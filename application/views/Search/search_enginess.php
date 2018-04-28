@@ -72,12 +72,14 @@
                       </div>
                     </div>
                     <div class="col-sm-12">
+                      <form>
                       <div class="form-group" style="margin-top:10px;">
                         <label for="sel3">Select type of car (select one):</label>
                         <select class="form-control" onload="loadtypecar()" id="discar">
                           <option selected="true" disabled="disabled">Type of Car</option>
                         </select>
                       </div>
+                    </form>
                     </div>
                 </div>
                 <!--    Col 3  -->
@@ -180,8 +182,9 @@
     </div>
   <!-- End body content-->
   <hr>
+  <script src="<?php echo base_url('js/pricerange.js'); ?>"></script>
   <script src="<?php echo base_url('js/search.js'); ?>"></script>
-  <script src="<?php echo base_url('js/script.js');?>"></script>
+  <script src="<?php echo base_url('js/googlemap.js');?>"></script>
   <script src="<?php echo base_url('js/datepicker.js'); ?>"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcvzlX3wXewDZjucmkOLPL1U_baon3TEA&callback=initMap">

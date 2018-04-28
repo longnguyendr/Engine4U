@@ -8,4 +8,11 @@ class Search extends CI_Controller {
     $this->load->view('menu/content',$data);
   }
 
+  public function car($slug = null)
+  {
+    $data['cars'] = $this->search_model->get_carss($slug);
+    $car_id = $data['cars']['carID'];
+    $data['page'] = 'main/tests2';
+    $this->load->view('menu/content', $data);
+  }
 }
