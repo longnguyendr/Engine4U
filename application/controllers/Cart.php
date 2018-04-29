@@ -3,10 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cart extends CI_Controller {
 
-  public function Carts(){
-    $data['page']='cart/cart';
-    $this->load->view('menu/content',$data);
-  }
   public function Cart2s(){
     $data['page']='cart/cart2';
     $this->load->view('menu/content',$data);

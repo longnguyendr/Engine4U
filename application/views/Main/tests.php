@@ -54,7 +54,7 @@
     </div>
 
     <div class="slidecontainer" id="pri" style="margin-left:0;">
-      <input type="range" min="1" max="999" value="50" class="slider" id="myRange">
+      <input type="range" min="0" max="600" value="0" class="slider" id="myRange">
       <p>Price: <span id="pricerange"></span></p>
     </div>
     <script src="<?php echo base_url('js/pricerange.js'); ?>"></script>
