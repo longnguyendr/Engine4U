@@ -12,9 +12,13 @@
 <input type="text" id="s_name" />
 <button onclick="GetCarsBySearch()">Search</button>
 <br>
-<label for="resultss">Results:</label>
-<p id='resultss'></p>
-
+<div class="container">
+  <div class="table-responsive">
+    <label for="resultss">Results:</label>
+    <p id='resultss'></p>
+  </div>
+</div>
+<div class="container">
 <td><label for="">CHECK-IN</label></td>
     <td>
         <div class='input-group date' id='datetimepicker_checkin'>
@@ -57,6 +61,8 @@
       <input type="range" min="0" max="600" value="0" class="slider" id="myRange">
       <p>Price: <span id="pricerange"></span></p>
     </div>
+</div>
+    <script src="<?php echo base_url('js/test.js'); ?>"></script>
     <script src="<?php echo base_url('js/pricerange.js'); ?>"></script>
-    <script src="<?php echo base_url('js/search.js'); ?>"></script>
+    <script src="<?php echo base_url('js/searchstyle.js'); ?>"></script>
     <script src="<?php echo base_url('js/datepicker.js'); ?>"></script>

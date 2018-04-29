@@ -1,24 +1,4 @@
-window.addEventListener("load" , function loadtypecar(){
-  var cars = ["Coupe","Diesel","Truck", "SUV", "Sedans" ,"Sport Car"];
-    for (var x= 0; x < cars.length ;x++)
-    {
-      var z = document.getElementById("discar");
-      var option = document.createElement("option");
-      option.text = cars[x];
-      z.add(option);
-    }
-});
 
-window.addEventListener("load",function loadmodel(){
-  var model = ["1993","1995","1998", "2000", "2010", "2013" , "2015" ,"2018"];
-  for (var x= 0; x < model.length ;x++)
-  {
-    var z = document.getElementById("mdy");
-    var option = document.createElement("option");
-    option.text = model[x];
-    z.add(option);
-  }
-});
 
 function GetCarsBySearch() {
   var choose = document.getElementById('s_name').value;
@@ -60,7 +40,7 @@ function GetCarsBySearch() {
               //console.log("run 2 " +t + l + m + s + e + p);
               if(t && l && m && s && e && p) {
               //console.log(t + l + m + s + e + p);
-              var data = '<table border="1">'+
+              var data = '<table class="table table-condensed table-hover table-bordered">'+
                           '<tr><td>' +
                           'city' +
                           '</td><td> ' +
@@ -92,7 +72,7 @@ function GetCarsBySearch() {
                         '</td><td> ' +
                         jsonData[x].price +
                         '</td></tr>' ;
-                  data = data.link("../Reserve/car/"+ jsonData[x].carID)
+                  data = data.link("../Reserve/reserves/"+ jsonData[x].carID)
                   data += '</table>' + '<br>';
                   document.getElementById('resultss').innerHTML += data;
               }
@@ -110,7 +90,7 @@ function GetCarsBySearch() {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
               jsonData = JSON.parse(xhttp.responseText);
               for (x in jsonData){
-                var data = '<table border="1">'+
+                var data = '<table class="table table-condensed table-hover table-bordered">'+
                             '<tr><td>' +
                             'city' +
                             '</td><td> ' +
@@ -142,7 +122,7 @@ function GetCarsBySearch() {
                         '</td><td> ' +
                         jsonData[x].price +
                         '</td></tr>' ;
-                  data = data.link("../Reserve/car/"+ jsonData[x].carID)
+                  data = data.link("../Reserve/reserves/"+ jsonData[x].carID)
                   data += '</table>' + '<br>';
                   document.getElementById('resultss').innerHTML += data;
               }

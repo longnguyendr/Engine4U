@@ -2,12 +2,11 @@
 
 <div class="container" style="margin-top:80px;">
   <ul class="breadcrumb">
-    <li><a href="<?php echo site_url('cart/carts');?>">Booking details</li></a>
+    <li><a href="<?php echo site_url('reserve/cart/'.$cars['carID']);?>">Booking details</li></a>
     <li class="active">Identity prove</li>
     <li>Confirm payment</li>
   </ul>
 </div>
-
 <div class="container" style="box-shadow:0px 5px 10px;padding: 15px;">
   <!--Open row-->
   <div class="row">
@@ -44,8 +43,8 @@
         </div>
         <!--End Right Panel-->
         <div class="col-sm-12 text-left" style="padding-top:20px;">
-            <a href="<?php echo site_url('cart/carts')?>" type="button" class="btn btn-primary" >Back</a>
-            <a href="<?php echo site_url('cart/cart3s')?>" type="button" class="btn btn-primary" >Continue</a>
+            <a href="<?php echo site_url('reserve/car/'.$cars['carID']);?>" type="button" class="btn btn-primary" >Back</a>
+            <a href="<?php echo site_url('cart/cart3s/'.$cars['carID']);?>" type="button" class="btn btn-primary" >Continue</a>
         </div>
   </div>
   <!--End row-->

@@ -3,8 +3,8 @@
 
 <div class="container" style="margin-top:80px;">
   <ul class="breadcrumb">
-    <li><a href="<?php echo site_url('cart/carts');?>">Booking details</li></a>
-    <li><a href="<?php echo site_url('cart/cart2s');?>">Identity prove</li></a>
+    <li><a href="<?php echo site_url('reserve/car/'.$cars['carID']);?>">Booking details</li></a>
+    <li><a href="<?php echo site_url('cart/cart2s/'.$cars['carID']);?>">Identity prove</li></a>
     <li class="active">Confirm payment</li>
   </ul>
 </div>
@@ -63,8 +63,8 @@
         </div>
         <!--End Right Panel-->
         <div class="col-sm-12 text-left" style="padding-top:20px;">
-            <a href="<?php echo site_url('cart/cart2s')?>" type="button" class="btn btn-primary" >Back</a>
-            <a href="<?php echo site_url('cart/cart4s')?>" type="button" class="btn btn-primary" >Continue</a>
+            <a href="<?php echo site_url('cart/cart2s/'.$cars['carID']);?>" type="button" class="btn btn-primary" >Back</a>
+            <a href="<?php echo site_url('cart/cart4s/'.$cars['carID']);?>" type="button" class="btn btn-primary" >Continue</a>
         </div>
   </div>
   <!--End row-->

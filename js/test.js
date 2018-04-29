@@ -6,7 +6,7 @@ function GetCars(format) {
   xhttp.open('GET', url, true);
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById('results').innerHTML += xhttp.responseText;
+      document.getElementById('results').innerHTML = xhttp.responseText;
     }
   };
   xhttp.send();
@@ -51,7 +51,7 @@ function GetCarsBySearch() {
           //console.log("run 2 " +t + l + m + s + e + p);
           if(t && l && m && s && e && p) {
           //console.log(t + l + m + s + e + p);
-          var data = '<table border="1">'+
+          var data = '<table class="table table-condensed table-hover table-bordered">'+
                       '<tr><td>' +
                       'city' +
                       '</td><td> ' +
@@ -83,7 +83,7 @@ function GetCarsBySearch() {
                     '</td><td> ' +
                     jsonData[x].price +
                     '</td></tr>' ;
-              data = data.link("../Search/car/"+ jsonData[x].carID)
+              data = data.link("../Reserve/reserves/"+ jsonData[x].carID)
               data += '</table>' + '<br>';
               document.getElementById('resultss').innerHTML += data;
           }
@@ -92,8 +92,52 @@ function GetCarsBySearch() {
     };
     xhttp.send();
   }
+
     else {
-     document.getElementById('resultss').innerHTML =  prices;
+      xhttp.onreadystatechange = function() {
+        document.getElementById('resultss').innerHTML = '';
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+          jsonData = JSON.parse(xhttp.responseText);
+          for (x in jsonData){
+            var data = '<table class="table table-condensed table-hover table-bordered">'+
+                        '<tr><td>' +
+                        'city' +
+                        '</td><td> ' +
+                        'carID' +
+                        '</td><td> ' +
+                        'type of car' +
+                        '</td><td> ' +
+                        'start_date' +
+                        '</td><td> ' +
+                        'end_date' +
+                        '</td><td> ' +
+                        'year' +
+                        '</td><td> ' +
+                        'price' +
+                        '</td></tr>' ;
+            data +=
+                    '<tr><td>' +
+                    jsonData[x].city +
+                    '</td><td> ' +
+                    jsonData[x].carID +
+                    '</td><td> ' +
+                    jsonData[x].type_of_car +
+                    '</td><td> ' +
+                    jsonData[x].start_date +
+                    '</td><td> ' +
+                    jsonData[x].end_date +
+                    '</td><td> ' +
+                    jsonData[x].year +
+                    '</td><td> ' +
+                    jsonData[x].price +
+                    '</td></tr>' ;
+              data = data.link("../Reserve/reserves/"+ jsonData[x].carID)
+              data += '</table>' + '<br>';
+              document.getElementById('resultss').innerHTML += data;
+          }
+        }
+      };
+      xhttp.send();
     }
 }
 

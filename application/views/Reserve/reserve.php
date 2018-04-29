@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="col-sm-12 text-center" >
-              <a href="<?php echo site_url('cart/carts');?>"type="button" class=" btn btn-primary ">Reserve</a>
+              <a href="<?php echo site_url('reserve/car/'.$cars['carID']);?>"type="button" class=" btn btn-primary ">Reserve</a>
             </div>
             <div class="col-sm-12" style="margin-top: 50px;height:300px;overflow-y: scroll;">
                 <h3>Review from customer</h3>
@@ -97,7 +97,7 @@
             </div>
         </div>
         <!--end Left panel-->
-        
+
         <!--Right Panel Price display-->
         <div class="col-sm-6">
               <div class="col-sm-12 text-center">
@@ -160,3 +160,4 @@
       <!--END Similar host display images-->
 </div>
 <hr>
+<script src="<?php echo base_url('js/datepicker.js'); ?>"></script>

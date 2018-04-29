@@ -110,7 +110,7 @@
                   <!--    Col 2  -->
                   <div class="col-sm-2">
                     <div >
-                      <button type="button" class="btn-search" onclick="GetCarsBySearch()"> <b>Search</b></button>
+                      <button type="button" class="btn-search" onclick="GetCarsBySearch()"> Search</button>
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -150,6 +150,7 @@
   <hr>
   <script src="<?php echo base_url('js/pricerange.js'); ?>"></script>
   <script src="<?php echo base_url('js/search.js'); ?>"></script>
+  <script src="<?php echo base_url('js/searchstyle.js'); ?>"></script>
   <script src="<?php echo base_url('js/googlemap.js');?>"></script>
   <script src="<?php echo base_url('js/datepicker.js'); ?>"></script>
     <script async defer

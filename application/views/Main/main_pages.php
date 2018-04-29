@@ -263,6 +263,7 @@
   </div>
   <hr>
 </div>
+<script src="<?php echo base_url('js/searchstyle.js'); ?>"></script>
 <script src="<?php echo base_url('js/search.js'); ?>"></script>
 <script src="<?php echo base_url('js/pricerange.js'); ?>"></script>
 <script src="<?php echo base_url('js/datepicker.js'); ?>"></script>

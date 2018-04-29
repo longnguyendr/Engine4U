@@ -6,7 +6,7 @@
     <li>Confirm payment</li>
   </ul>
 </div>
-
+<?php echo $cars['carID']; ?>
 <div class="container" style="box-shadow:0px 5px 10px;padding: 15px;">
   <!--Open row-->
   <div class="row">
@@ -49,7 +49,7 @@
         </div>
         <!--End Right Panel-->
         <div class="col-sm-12 text-left" style="padding-top:20px;">
-            <a href="<?php echo site_url('cart/cart2s')?>" type="button" class="btn btn-primary" >Continue</a>
+            <a href="<?php echo site_url('cart/cart2s/'.$cars['carID']);?>" type="button" class="btn btn-primary" >Continue</a>
         </div>
   </div>
   <!--End row-->
